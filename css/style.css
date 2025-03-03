@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -56,6 +57,88 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+/****** Header ***********/
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 61.09px;
+    height: 19px;
+    padding: 30px 50px 30px 0px;
+}
+
+nav ul {
+    display: flex;
+    gap: 68px;
+    list-style: none;
+    margin-top: 0;
+}
+
+nav ul li {
+    padding-top: 16px;
+}
+
+nav ul li:hover {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+}
+
+nav ul li:active {
+    color: var(--main-color);
+}
+
+/****** Hebergements Search ***********/
+.hebergements-search-title p {
+    margin-top: 8px;
+    margin-bottom: 35px;
+}
+
+.search-form {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.search-form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 49px;
+    border-radius: 15px 0 0 15px;
+    background-color: var(--main-bg-color);
+    border: 2px solid var(--main-bg-color);
+}
+
+.fa-location-dot {
+    position: relative;
+    color: #000000;
+}
+
+.search-input {
+    border-radius: 0;
+    border-top: 1px solid var(--main-bg-color);
+    border-bottom: 1px solid var(--main-bg-color);
+    border-left: none;
+    border-right: none;
+    padding: 0 20px;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #000000;
+}
+
+.search-button {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 0 15px 15px 0;
+    padding: 15px 16px 15px 16px;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    font-weight: 700;
 }
 
 /****** Hebergements And Populaires ***********/
