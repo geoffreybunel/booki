@@ -505,15 +505,12 @@ footer {
     }
 
     .filters div {
-        display: flex;
         width: 100%;
         gap: 10px;
     }
 
     .filters-button {
         font-size: 0.88em;
-        font-weight: 700;
-        background-color: #FFFFFF;
         width: 50%;
     }
 
@@ -527,7 +524,6 @@ footer {
     }
 
     .hebergements-and-populaires .populaires {
-        background-color: var(--main-bg-color);
         padding: 30px 20px;
     }
 
@@ -595,6 +591,5 @@ footer {
     .footer-section {
         width: 100%;
         padding: 0px;
-        gap: 15px;
     }
 }
