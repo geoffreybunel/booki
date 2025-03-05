@@ -22,8 +22,13 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
+}
+
+p, h3 {
+    margin: 0;
 }
 
 a {
@@ -36,10 +41,11 @@ a {
     font-size: 22px;
 }
 
+/* !!! .CARD SUPPRESSION PADDING 5px */
 .card {
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
+    /* padding: 5px; */
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -59,12 +65,16 @@ a {
     color: var(--main-bg-color)
 }
 
-.mb30 {
-    margin-bottom: 30px;
+.gap35 {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
 
-.mb35 {
-    margin-bottom: 35px;
+.gap30 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .hidden {
@@ -105,7 +115,7 @@ nav ul li:active {
 
 /****** Research Form ***********/
 .hebergements-search-title p {
-    margin-top: 8px;
+    margin: 8px 0 0;
 }
 
 /****** Search bar ***********/
@@ -167,7 +177,7 @@ nav ul li:active {
     border-radius: 25px;
     border: 2px solid #D9D9D9;
     padding: 4px 19px;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 700;
     background-color: #FFFFFF;
 }
@@ -181,10 +191,6 @@ nav ul li:active {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.info-hebergements p {
-    margin: 0;
 }
 
 .info-icon {
@@ -201,12 +207,11 @@ nav ul li:active {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
 }
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 30px;
     box-sizing: border-box;
 }
@@ -216,49 +221,47 @@ nav ul li:active {
     width: 65%;
 }
 
-.hebergements .section-title {
-    margin-bottom: 33px;
-}
-
 .hebergements-cards {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     gap: 30px
 }
 
 .hebergements-cards a {
-    width: 30%;
+    width: 33%;
 }
 
 .hebergements-cards img {
     width: 100%;
     height: 124px;
     border-radius: 20px 20px 0 0;
+    border: 5px solid #FFFFFF;
+    box-sizing: border-box;
 }
 
 .hebergements-cards .card-content {
-    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 15px;
 }
 
-.hebergements-cards .card-title {
-    margin: 5px 0 8px;
+.hebergements-cards .card-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .hebergements-cards .card-subtitle {
-    font-size: 0.85em;
-    margin: 0 0 8px 0;
+    font-size: 0.88em;
 }
 
 .hebergements-cards .card-rating {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .show-more {
     font-size: 1.2em;
     font-weight: 700;
-    margin-bottom: 0;
-    padding-top: 9px;
 }
 
 /****** Populaires ***********/
@@ -274,37 +277,40 @@ nav ul li:active {
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
 }
 
 .populaires-cards img {
     width: 33%;
-    height: 136px;
+    height: 146px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    border-radius: 20px 0 0 20px;
+    border: 5px solid #FFFFFF;
+    box-sizing: border-box;
 }
 
 .populaires-cards .card-content {
     width: 67%;
-    padding-left: 15px;
+    padding: 10px 5px 5px 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
 }
 
-.populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+.populaires-cards .card-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .populaires-cards .card-subtitle {
-    margin: 0;
+    font-size: 0.88em;
 }
 
-.populaires-cards .card-rating {
+/* .populaires-cards .card-rating {
     margin-bottom: 5px;
-}
+} */
 
 /****** Activités à Marseille ***********/
 .activites {
@@ -313,7 +319,6 @@ nav ul li:active {
 
 .activites-cards {
     display: flex;
-    margin-top: 33px;
     gap: 30px;
 }
 
@@ -341,8 +346,6 @@ nav ul li:active {
 
 .activites-text .card-title {
     padding: 10px 19px 10px 19px;
-    margin: 0;
-
 }
 
 /****** Footer ***********/
@@ -361,7 +364,6 @@ footer {
 }
 
 .footer-section .card-title {
-    margin: 0;
     font-size: 1.1em;
 }
 
@@ -432,7 +434,6 @@ footer {
 @media (max-width: 767.98px) {
     /* General */
     .main-container {
-        min-width: 320px;
         padding: 0;
     }
 
@@ -596,5 +597,4 @@ footer {
         padding: 0px;
         gap: 15px;
     }
-
 }
