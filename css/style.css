@@ -97,7 +97,7 @@ nav ul {
     display: flex;
     gap: 68px;
     list-style: none;
-    margin-top: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -534,19 +534,12 @@ footer {
     .populaires {
         width: 100%;
         margin-top: 0;
-    }
-
-    .populaires-title {
-        margin-bottom: 35px;
+        gap: 15px;
     }
 
     .populaires-cards {
         flex-direction: column;
         gap: 15px;
-    }
-
-    .populaires-cards .card {
-        margin-top: 0px;
     }
 
     .populaires-cards a {
@@ -556,6 +549,10 @@ footer {
     .hebergements-and-populaires .hebergements {
         background-color: #FFFFFF;
         padding: 30px 20px;
+    }
+
+    .hebergements {
+        gap: 15px;
     }
 
     .hebergements-cards {
@@ -568,6 +565,9 @@ footer {
     }
 
     /*  Activités */
+    .activites {
+        padding: 30px;
+    }
     .activites-cards {
         gap: 15px;
         flex-direction: column;
