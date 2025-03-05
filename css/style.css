@@ -114,12 +114,8 @@ nav ul li:active {
 }
 
 .search-form div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 49px;
     border-radius: 15px 0 0 15px;
+    padding: 15px 17.5px 15px 17.5px;
     background-color: var(--main-bg-color);
     border: 2px solid var(--main-bg-color);
 }
@@ -158,6 +154,11 @@ nav ul li:active {
     gap: 15px;
 }
 
+.filters div {
+    display: flex;
+    gap: 15px;
+}
+
 .filters-button {
     display: flex;
     align-items: center;
@@ -190,7 +191,7 @@ nav ul li:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 24px;
+    min-width: 24px;
     height: 24px;
     border: 1px solid #D9D9D9;
     border-radius: 100%;
@@ -353,6 +354,9 @@ footer {
 }
 
 .footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     width: 33%;
     padding: 20px;
 }
@@ -360,17 +364,6 @@ footer {
 .footer-section .card-title {
     margin: 0;
     font-size: 1.1em;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.footer-section li {
-    margin-bottom: 15px;
-    font-size: 0.9em;
-    font-size: 1em;
 }
 
 
@@ -438,6 +431,7 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    /* General */
     .main-container {
         min-width: 320px;
         padding: 0;
@@ -477,10 +471,16 @@ footer {
     }
 
     /* Search Bar */
-    /* ! Input n'atteint pas le bouton rechercher */
-    .search-form {
-        justify-content: center;
+    .search-input {
+        width: 100%;
+        border: 1px solid var(--main-bg-color);
+        border-radius: 0 15px 15px 0;
     }
+    
+    .search-form {
+        position: relative;
+    }
+
     .search-button {
         display: none;
     }
@@ -495,21 +495,27 @@ footer {
         font-size: 1.1em;
         font-weight: bold;
         filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.1));
+        position: absolute;
+        right: 0;
     }
 
+    /* Filters */
     .filters {
-        gap: 20px;
+        gap: 20px 10px;
     }
+
+    .filters div {
+        display: flex;
+        width: 100%;
+        gap: 10px;
+    }
+
     .filters-button {
-        font-size: 0.85em;
+        font-size: 0.88em;
         font-weight: 700;
         background-color: #FFFFFF;
-        width: 47%;
+        width: 50%;
     }
-
-    /*  Info hébergements */
-    /* ! Bordure de l'icone pas ronde */
-    
 
     /*  Hébergements et Populaires */
     .hebergements-and-populaires {
@@ -589,5 +595,7 @@ footer {
     .footer-section {
         width: 100%;
         padding: 0px;
+        gap: 15px;
     }
+
 }
