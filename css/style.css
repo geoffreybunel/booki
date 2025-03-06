@@ -41,7 +41,7 @@ a {
     font-size: 22px;
 }
 
-/* !!! .CARD SUPPRESSION PADDING 5px */
+/* Suppression padding 5px sur la class .card */
 .card {
     background-color: white;
     border-radius: 20px;
