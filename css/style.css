@@ -44,7 +44,6 @@ a {
     font-size: 22px;
 }
 
-/* Suppression padding 5px sur la class .card */
 .card {
     background-color: var(--card-filter-bg-color);
     border-radius: 20px;
