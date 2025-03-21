@@ -374,11 +374,11 @@ footer {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (min-width: 1025px) and (max-width: 1115px) {
+/* @media (min-width: 1025px) and (max-width: 1115px) {
     .hebergements-cards {
         gap: 20px;
     }
-}
+} */
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media screen and (max-width: 1024px) {
