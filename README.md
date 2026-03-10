@@ -22,7 +22,7 @@ This project focuses on building a clean and structured layout using semantic HT
 
 Clone the repository:
 
-git clone https://github.com/yourusername/booki.git
+git clone https://github.com/geoffreybunel/booki.git
 
 Then open the `index.html` file in your browser.
 
